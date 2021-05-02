@@ -17,6 +17,7 @@ for i in range(n):
 
 print(max(prices))
 
+       
 # a, b, c = map(int, input().split())
 # if a == b == c:
 #     sum = 10000 + a * 1000
