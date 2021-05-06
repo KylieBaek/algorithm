@@ -36,6 +36,15 @@ for _ in range(m):
         arr = rotate_left(arr, cnt)
     a[i - 1] = arr
 
+
+    # solution 2
+    # if is_right == 0:
+    #     for _ in range(cnt):
+    #         a[i - 1].append(a[i - 1].pop(0))
+    # else:
+    #     for _ in range(cnt):
+    #         a[i - 1].insert(0, a[i - 1].pop())
+
 # 모래시계 합구하기
 s = 0
 e = n - 1
