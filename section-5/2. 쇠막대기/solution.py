@@ -6,22 +6,20 @@ s = input()
 cnt = 0
 stack = []
 
-
 for i in range(len(s)):
-    print(stack)
-    print(cnt)
+    # print(stack)
+    # print(cnt)
     if s[i] == '(':
         stack.append(s[i])
-    else:
+    elif s[i] == ')':
         if s[i - 1] == '(':  # 레이저
             stack.pop()
             cnt += len(stack)
-        else:
-            stack.pop()  # 쇠막대기 끝
+        elif s[i] == ')':  # 쇠막대기 끝
+            stack.pop()
             cnt += 1
 
 print(cnt)
-
 
 # ()(((()())(())()))(())
 # STACK
